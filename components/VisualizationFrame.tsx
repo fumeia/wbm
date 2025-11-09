@@ -24,9 +24,9 @@ const VisualizationFrame = () => {
         .range([height - margin.bottom, margin.top]);
 
       const line = d3
-        .line()
-        .x((d: any) => x(d.x))
-        .y((d: any) => y(d.y));
+        .line<{ x: number; y: number }>()
+        .x((d) => x(d.x))
+        .y((d) => y(d.y));
 
       const data = d3.range(0, 10, 0.1).map((i) => ({ x: i, y: Math.sin(i) }));
 
