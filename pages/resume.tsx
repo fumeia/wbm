@@ -3,7 +3,7 @@ import Head from 'next/head';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 import { getLatestRepos, Repo } from '../lib/github';
-import { MathJax, MathJaxContext } from 'mathjax-react';
+import { MathJaxContext } from 'better-react-mathjax';
 import ExampleSummary from '../content/summaries/example.mdx';
 
 interface ResumeProps {
