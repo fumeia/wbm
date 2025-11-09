@@ -9,7 +9,7 @@ const Header = () => {
           {/* --- CUSTOMIZATION --- */}
           <h1 className="text-2xl font-bold font-serif">
             <Link href="/">
-              <a>Your Name</a>
+              Your Name
             </Link>
           </h1>
           <p className="text-gray-600 dark:text-gray-400">

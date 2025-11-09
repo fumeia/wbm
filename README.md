@@ -71,8 +71,8 @@ Open [http://localhost:3000](http://localhost:3000) in your browser to see the r
 ```bash
 git init
 git add .
-git commit -m "Initial commit"
-git remote add origin https://github.com/your-username/your-repo-name.git
+git commit -m "version x, changes"
+#git remote add origin https://github.com/your-username/your-repo-name.git don't need this anymore, it's already there
 git push -u origin main
 ```
 
