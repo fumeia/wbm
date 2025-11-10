@@ -4,13 +4,22 @@ import Header from '../components/Header';
 import Footer from '../components/Footer';
 import { getLatestRepos, Repo } from '../lib/github';
 import { MathJaxContext } from 'better-react-mathjax';
-import ExampleSummary from '../content/summaries/example.mdx';
+import { MDXRemote, MDXRemoteSerializeResult } from 'next-mdx-remote';
+import { serialize } from 'next-mdx-remote/serialize';
+import fs from 'fs';
+import path from 'path';
+import VisualizationFrame from '../components/VisualizationFrame';
 
 interface ResumeProps {
   repos: Repo[];
+  mdxSource: MDXRemoteSerializeResult;
 }
 
-const Resume: NextPage<ResumeProps> = ({ repos }) => {
+const components = {
+  VisualizationFrame,
+};
+
+const Resume: NextPage<ResumeProps> = ({ repos, mdxSource }) => {
   const mathJaxConfig = {
     loader: { load: ['[tex]/html'] },
     tex: {
@@ -96,7 +105,7 @@ const Resume: NextPage<ResumeProps> = ({ repos }) => {
             {/* --- TOPIC SUMMARIES --- */}
             <section>
               <h2>Topic Summaries</h2>
-              <ExampleSummary />
+              <MDXRemote {...mdxSource} components={components} />
             </section>
           </div>
         </main>
@@ -112,9 +121,19 @@ export const getStaticProps: GetStaticProps = async () => {
   // Replace with your GitHub username
   const repos = await getLatestRepos('your-username');
 
+  const filePath = path.join(
+    process.cwd(),
+    'content',
+    'summaries',
+    'example.mdx'
+  );
+  const source = fs.readFileSync(filePath, 'utf8');
+  const mdxSource = await serialize(source);
+
   return {
     props: {
       repos,
+      mdxSource,
     },
     revalidate: 3600, // Re-generate the page every hour
   };
