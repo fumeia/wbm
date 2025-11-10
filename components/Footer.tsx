@@ -9,7 +9,7 @@ const Footer = () => {
             href="mailto:contact@nikolaus-berschin.eu"
             className="hover:text-black dark:hover:text-white"
           >
-            write an E-Mail
+            E-Mail
           </a>
           <span>|</span>
           <a
