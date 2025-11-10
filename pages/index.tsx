@@ -8,11 +8,11 @@ const Home: NextPage = () => {
   return (
     <div className="flex flex-col min-h-screen">
       <Head>
-        {/* --- CUSTOMIZATION --- */}
-        <title>Your Name - Personal Website</title>
+        {/* --- CUSTOMIZATION, changes search engine view */}
+        <title>Nikolaus Berschin - Portfolio</title>
         <meta name="description" content="Welcome to my personal website." />
         {/* --- Social Meta --- */}
-        <meta property="og:title" content="Your Name - Personal Website" />
+        <meta property="og:title" content="Personal Website of Nikolaus Berschin" />
         <meta
           property="og:description"
           content="Welcome to my personal website."
@@ -29,9 +29,9 @@ const Home: NextPage = () => {
             Welcome
           </h2>
           <p className="mt-3 max-w-md mx-auto text-base text-gray-500 dark:text-gray-400 sm:text-lg md:mt-5 md:text-xl md:max-w-3xl">
-            This is a brief and engaging bio about yourself. Talk about your
-            passions, your work, and what drives you. Keep it concise and
-            impactful.
+            I'm a physics student with a growing interest in web development and how complex ideas connect across different fields. 
+            I love digging into how things work, not just using concepts or tools, but understanding the reasoning behind them. 
+            Whether it's the logic behind a physical law or the structure of a website, I'm driven by curiosity and the challenge of turning theory into something that actually works.
           </p>
           <div className="mt-5 max-w-md mx-auto sm:flex sm:justify-center md:mt-8">
             <div className="rounded-md shadow">

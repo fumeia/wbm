@@ -84,7 +84,7 @@ const Resume: NextPage<ResumeProps> = ({ repos }) => {
 export const getStaticProps: GetStaticProps = async () => {
   // --- CUSTOMIZATION ---
   // Replace with your GitHub username
-  const repos = await getLatestRepos('fumeia');
+  const repos = await getLatestRepos('niaus');
 
   return {
     props: {
