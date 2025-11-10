@@ -11,7 +11,7 @@ const Resume: NextPage<ResumeProps> = ({ repos }) => {
   return (
     <div className="flex flex-col min-h-screen">
       <Head>
-        <title>Résumé - Your Name</title>
+        <title>Résumé - Nikolaus Berschin</title>
         <meta name="description" content="My interactive résumé." />
       </Head>
 
@@ -24,10 +24,10 @@ const Resume: NextPage<ResumeProps> = ({ repos }) => {
             <h2>Education</h2>
             <ul>
               <li>
-                <strong>M.Sc. in Physics</strong> - University Name (Year)
+                <strong>Abitur</strong> - Georg Büchner Gymnasium (2023)
               </li>
               <li>
-                <strong>B.Sc. in Mathematics</strong> - University Name (Year)
+                <strong>B.Sc. in Physics</strong> - ETH Zurich (2027)
               </li>
             </ul>
           </section>
@@ -37,7 +37,7 @@ const Resume: NextPage<ResumeProps> = ({ repos }) => {
             <h2>Skills</h2>
             <ul>
               <li>
-                <strong>Languages:</strong> TypeScript, Python, C++
+                <strong>Programming Languages:</strong> TypeScript, Python, C++
               </li>
               <li>
                 <strong>Frameworks:</strong> Next.js, React, Node.js
@@ -84,7 +84,7 @@ const Resume: NextPage<ResumeProps> = ({ repos }) => {
 export const getStaticProps: GetStaticProps = async () => {
   // --- CUSTOMIZATION ---
   // Replace with your GitHub username
-  const repos = await getLatestRepos('your-username');
+  const repos = await getLatestRepos('fumeia');
 
   return {
     props: {

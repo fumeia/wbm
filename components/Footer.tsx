@@ -5,7 +5,7 @@ const Footer = () => {
         {/* --- CUSTOMIZATION --- */}
         <div className="flex justify-center space-x-4">
           <a
-            href="https://github.com/your-username"
+            href="https://github.com/fumeia"
             target="_blank"
             rel="noopener noreferrer"
             className="hover:text-black dark:hover:text-white"
@@ -13,7 +13,7 @@ const Footer = () => {
             GitHub
           </a>
           <a
-            href="https://linkedin.com/in/your-username"
+            href="https://linkedin.com/in/nikolaus-berschin"
             target="_blank"
             rel="noopener noreferrer"
             className="hover:text-black dark:hover:text-white"
@@ -30,7 +30,7 @@ const Footer = () => {
           </a>
         </div>
         <p className="mt-4">
-          &copy; {new Date().getFullYear()} Your Name. All Rights Reserved.
+          &copy; {new Date().getFullYear()} Nikolaus Berschin. All Rights Reserved.
         </p>
         {/* ------------------- */}
       </div>

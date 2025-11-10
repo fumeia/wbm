@@ -9,11 +9,11 @@ const Header = () => {
           {/* --- CUSTOMIZATION --- */}
           <h1 className="text-2xl font-bold font-serif">
             <Link href="/">
-              Your Name
+              Nikolaus Berschin
             </Link>
           </h1>
           <p className="text-gray-600 dark:text-gray-400">
-            Your tagline or short bio goes here.
+            Physics BSc Student @ ETH Zurich
           </p>
           {/* ------------------- */}
         </div>
