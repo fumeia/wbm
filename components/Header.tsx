@@ -4,7 +4,7 @@ import ThemeToggle from './ThemeToggle';
 const Header = () => {
   return (
     <header className="py-8">
-      <div className="container mx-auto flex justify-between items-center">
+      <div className="container mx-auto flex justify-between items-center px-4 sm:px-6 lg:px-8">
         <div>
           {/* --- CUSTOMIZATION --- */}
           <h1 className="text-2xl font-bold font-serif">

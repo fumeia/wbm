@@ -1,7 +1,7 @@
 const Footer = () => {
   return (
     <footer className="py-8 mt-16 border-t">
-      <div className="container mx-auto text-center text-gray-600 dark:text-gray-400">
+      <div className="container mx-auto text-center text-gray-600 dark:text-gray-400 px-4 sm:px-6 lg:px-8">
         {/* --- CUSTOMIZATION --- */}
         <div className="flex justify-center items-center space-x-4">
           <span>Contact:</span>
