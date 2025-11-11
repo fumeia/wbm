@@ -58,7 +58,7 @@ const Resume: NextPage<ResumeProps> = ({ repos }) => {
               content={
                 <ul className="list-disc list-inside space-y-2">
                   <li>
-                    Currently in my 5-th semester.
+                    Currently in my 5th semester.
                   </li>
                 </ul>
               }
@@ -151,7 +151,7 @@ const Resume: NextPage<ResumeProps> = ({ repos }) => {
             /> 
             <Card
               title="Deputy Student Representative"
-              subtitle="@ Georg Büchner Gymnasium (2022-2023)"
+              subtitle="at Georg Büchner Gymnasium (2022-2023)"
               content={
                 <p>Participated in weekly meetings with school representatives to improve campus life.
                   Collected student feedback and proposed actionable solutions to administration.</p>
