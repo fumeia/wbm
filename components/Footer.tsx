@@ -21,7 +21,7 @@ const Footer = () => {
             LinkedIn
           </a>
           <a
-            href="https://github.com/fumeia"
+            href="https://github.com/niaus"
             target="_blank"
             rel="noopener noreferrer"
             className="hover:text-black dark:hover:text-white"

@@ -9,9 +9,21 @@ module.exports = {
   ],
   theme: {
     extend: {
+      colors: {
+        primary: '#3b82f6', // Blue-500
+      },
       fontFamily: {
         sans: ['var(--font-sans)', ...fontFamily.sans],
         serif: ['var(--font-serif)', ...fontFamily.serif],
+      },
+      keyframes: {
+        'fade-in': {
+          '0%': { opacity: '0', transform: 'translateY(10px)' },
+          '100%': { opacity: '1', transform: 'translateY(0)' },
+        },
+      },
+      animation: {
+        'fade-in': 'fade-in 0.5s ease-out forwards',
       },
     },
   },

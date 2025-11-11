@@ -8,11 +8,11 @@ export interface Repo {
   language: string;
 }
 
-export const getLatestRepos = async (username: string): Promise<Repo[]> => {
+export const getLatestRepos = async (username: string, count: number = 5): Promise<Repo[]> => {
   // --- CUSTOMIZATION ---
   // Replace with your GitHub username
   const res = await fetch(
-    `https://api.github.com/users/${username}/repos?sort=updated&per_page=5`
+    `https://api.github.com/users/${username}/repos?sort=updated&per_page=${count}`
   );
   if (!res.ok) {
     throw new Error('Failed to fetch data');
