@@ -141,14 +141,23 @@ const Resume: NextPage<ResumeProps> = ({ repos }) => {
 
           {/* --- EXTRACURRICULAR ACTIVITIES --- */}
           <Section title="Extracurricular Activities" icon={<FiCoffee />}>
-             <Card
+            <Card
+              title="Prize Winner - Jugend Musiziert Competitions"
+              subtitle="Achievements in Classical Guitar (2015-2019)"
+              content={
+                <p>Awarded first place at the Baden-Württemberg State Competition of Jugend Musiziert in Germany and multiple prize winner as runner-up in Central Switzerland. 
+                </p>
+              }
+            /> 
+            <Card
               title="Deputy Student Representative"
-              subtitle="2022-2023 at Georg Büchner Gymnasium"
+              subtitle="@ Georg Büchner Gymnasium (2022-2023)"
               content={
                 <p>Participated in weekly meetings with school representatives to improve campus life.
                   Collected student feedback and proposed actionable solutions to administration.</p>
               }
             />
+            
           </Section>
         </div>
       </main>
