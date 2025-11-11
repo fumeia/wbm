@@ -46,7 +46,7 @@ const Resume: NextPage<ResumeProps> = ({ repos }) => {
           {/* --- RESEARCH INTERESTS --- */}
           <Section title="Research Interests" icon={<FiBook />}>
             <p className="italic text-gray-600 dark:text-gray-400">
-              My primary interests lie at the intersection of theoretical physics, computational science, and sustainable energy systems. I am particularly fascinated by plasma physics, quantum computing, and the application of machine learning to complex physical models.
+              Interested in applying physics and computational tools to model real-world systems, simulate physical processes, and analyze complex data.
             </p>
           </Section>
 
@@ -57,12 +57,8 @@ const Resume: NextPage<ResumeProps> = ({ repos }) => {
               subtitle="ETH Zurich (Expected 2027)"
               content={
                 <ul className="list-disc list-inside space-y-2">
-                  <li>Focusing on theoretical physics and computational methods.</li>
                   <li>
-                    Term Paper:{" "}
-                    <a href="/renewable-energies-nuclear-fusion-climate-term-paper-2022.pdf" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">
-                      Nuclear fusion with renewable energies as a way out of the global climate crisis (2022)
-                    </a>
+                    Currently in my 5-th semester.
                   </li>
                 </ul>
               }
@@ -71,7 +67,15 @@ const Resume: NextPage<ResumeProps> = ({ repos }) => {
               title="Abitur"
               subtitle="Georg Büchner Gymnasium (2023)"
               content={
-                <p>Graduated with distinction, focusing on physics and mathematics.</p>
+                <ul className="list-disc list-inside space-y-2">
+                  <li>Focus on Physics, Mathematics and English.</li>
+                  <li>
+                    Term Paper:{" "}
+                    <a href="/renewable-energies-nuclear-fusion-climate-term-paper-2022.pdf" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">
+                      Nuclear fusion with renewable energies as a way out of the global climate crisis (2022)
+                    </a>
+                  </li>
+                </ul>
               }
             />
           </Section>
@@ -102,10 +106,17 @@ const Resume: NextPage<ResumeProps> = ({ repos }) => {
           {/* --- WORK EXPERIENCE --- */}
           <Section title="Work Experience" icon={<FiCoffee />}>
             <Card
-              title="Placeholder Position"
-              subtitle="Company Name | City, Country (Year - Year)"
+              title="Private Tutor (Mathematics & Physics)"
+              subtitle="2022 - Present"
               content={
-                <p>Add a brief description of your responsibilities and achievements here. Use bullet points for clarity.</p>
+                <p>Support secondary-level students through one-on-one tutoring.</p>
+              }
+            />
+            <Card
+              title="Consulting Project - Financial Sector"
+              subtitle="September 2025"
+              content={
+                <p>Documented and analyzed service quality using predefined evaluation frameworks.</p>
               }
             />
           </Section>
@@ -113,10 +124,17 @@ const Resume: NextPage<ResumeProps> = ({ repos }) => {
           {/* --- CERTIFICATIONS --- */}
           <Section title="Certifications" icon={<FiAward />}>
              <Card
-              title="Placeholder Certification"
-              subtitle="Issuing Organization (Year)"
+              title="IELTS Academic"
+              subtitle="Level C1"
               content={
-                <p>Describe the certification and the skills it represents.</p>
+                <p>Certified proficiency in academic English comprehension, writing and speaking.</p>
+              }
+            />
+            <Card
+              title="Japanese Language Proficiency Test"
+              subtitle="N4"
+              content={
+                <p>Actively studying Japanese, focused on grammar, reading comprehension, and conversational fluency.</p>
               }
             />
           </Section>
@@ -124,10 +142,11 @@ const Resume: NextPage<ResumeProps> = ({ repos }) => {
           {/* --- EXTRACURRICULAR ACTIVITIES --- */}
           <Section title="Extracurricular Activities" icon={<FiCoffee />}>
              <Card
-              title="Placeholder Activity"
-              subtitle="Organization/Club (Year - Year)"
+              title="Deputy Student Representative"
+              subtitle="2022-2023 at Georg Büchner Gymnasium"
               content={
-                <p>Describe your role and involvement in the activity.</p>
+                <p>Participated in weekly meetings with school representatives to improve campus life.
+                  Collected student feedback and proposed actionable solutions to administration.</p>
               }
             />
           </Section>
