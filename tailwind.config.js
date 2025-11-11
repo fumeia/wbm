@@ -13,8 +13,8 @@ module.exports = {
         primary: '#3b82f6', // Blue-500
       },
       fontFamily: {
-        sans: ['var(--font-sans)', ...fontFamily.sans],
-        serif: ['var(--font-serif)', ...fontFamily.serif],
+        sans: ['Inter', ...fontFamily.sans],
+        serif: ['serif'],
       },
       keyframes: {
         'fade-in': {
